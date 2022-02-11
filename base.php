@@ -133,7 +133,7 @@ $Mem=new DB("member");
 // base serialize 12345分別存到資料庫裡 
 // 而unserialize是 還原
 $Admin=new DB('admin');
-
+$Bot=new DB('bottom');
 
 /* $admin['acc']='admin';
 $admin['pw']='1234';

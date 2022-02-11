@@ -54,12 +54,10 @@ function reg(){
         tel:$("#tel").val(),
         email:$("#email").val(),
     }
-// 帳號已存在 或 admin.acc剛好等於admin
     $.post("api/chk_acc.php",{acc:data.acc},(chk)=>{
         if(parseInt(chk) || data.acc=='admin'){
             alert("帳號已存在")
         }else{
-            // 把整個data送過去後台 --
             $.post("api/reg.php",data,()=>{
                 alert("註冊完成，歡迎加入")
                 location.href='?do=login'
@@ -69,4 +67,5 @@ function reg(){
 }
 
 
+// 帳號已存在 或 admin.acc剛好等於admin
 </script>

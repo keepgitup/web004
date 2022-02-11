@@ -18,3 +18,18 @@
 </table>
 <!-- 這裡用Ajax做確認比較快 -->
 <div class="ct"><button onclick="login">確認</button></div>
+
+<script>
+function login(){
+    $.post("api/chk_ans.php",{ans:$("#ans").val()},(chk)=>{
+        if(parseInt(chk)){
+            console.log("答對了")
+        }else{
+            alert("對不起，您輸入的驗證碼有誤請您重新登入")
+        }
+    })
+}
+
+
+</script>
+

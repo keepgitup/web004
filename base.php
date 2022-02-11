@@ -130,4 +130,7 @@ function dd($array){
 
 $Mem=new DB("member");
 
+// base serialize 12345分別存到資料庫裡 
+// 而unserialize是 還原
+
 ?>

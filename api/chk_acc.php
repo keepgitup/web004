@@ -8,4 +8,8 @@ if($chk){
 }else{
     echo 0;
 }
-//echo
+
+
+
+
+//echo $Mem->math('count','*',['acc'=>$_POST['acc']]);

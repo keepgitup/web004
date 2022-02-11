@@ -132,5 +132,11 @@ $Mem=new DB("member");
 
 // base serialize 12345分別存到資料庫裡 
 // 而unserialize是 還原
+$Admin=new DB('admin');
 
+
+/* $admin['acc']='admin';
+$admin['pw']='1234';
+$admin['pr']=serialize([1,2,3,4,5]);
+$Admin->save($admin); */
 ?>

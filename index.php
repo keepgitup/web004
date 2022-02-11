@@ -62,3 +62,11 @@
 <script src="./js/jquery-3.4.1.min.js"></script>
 </body>
 </html>
+
+<div class="ct"><button>
+
+</button><button>
+
+</button></div>
+
+<!-- 重置 就是 要用reset() 去把狀態設為空 -->

@@ -13,11 +13,18 @@
     </tr>
     <tr>
         <td class="tt ct">驗證碼</td>
-        <td class="pp"><input type="text" name="ans" id="ans"></td>
+        <td class="pp">
+            <?php
+                $a=rand(10,99);
+                $b=rand(10,99);
+                $_SESSION['ans']=$a+$b;
+                echo $a . " + " . $b . " = ";
+            ?>
+            <input type="text" name="ans" id="ans">
+        </td>
     </tr>
 </table>
-<!-- 這裡用Ajax做確認比較快 -->
-<div class="ct"><button onclick="login">確認</button></div>
+<div class="ct"><button onclick="login()">確認</button></div>
 
 <script>
 function login(){
@@ -40,4 +47,3 @@ function login(){
 
 
 </script>
-

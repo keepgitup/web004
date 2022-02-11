@@ -13,4 +13,8 @@
     </tr>
 </table>
 <!-- 這裡用Ajax做確認比較快 -->
-<div class="ct"><button onclick="login">確認</button></div>
+<div class="ct"><button onclick="login()">確認</button></div>
+
+
+>
+

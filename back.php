@@ -12,8 +12,7 @@
 <iframe name="back" style="display:none;"></iframe>
 	<div id="main">
     	<div id="top">
-		<div id="top">
-        	<a href="back.php">
+		<a href="index.php">
             	<img src="./Manage Page_files/0416.jpg">
             </a>
                             <img src="./Manage Page_files/0417.jpg">

@@ -1,19 +1,12 @@
-<h1 class="ct">最新消息
-</h1>
-
-
+<h1 class="ct">最新消息</h1>
 <table class="all">
-年終特賣會開跑    
-<tr>
-        <td></td>
-        
+    <tr class="tt ct">
+        <td>標題</td>
     </tr>
-    <tr>
-        <td></td>
-        
+    <tr class="pp">
+        <td>情人節特惠活動</td>
     </tr>
-    <tr>
-        <td></td>
-        
+    <tr class="pp">
+        <td>年終特賣會開跑了</td>
     </tr>
 </table>

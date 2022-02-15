@@ -29,13 +29,10 @@
 <script>
 function login(){
     $.post("api/chk_ans.php",{ans:$("#ans").val()},(chk)=>{
-        console.log(chk);
         if(parseInt(chk)){
             $.post("api/chk_pw.php",
-                //    這裡table要用admin 因為admin才是
-                   {table:'admin',acc:$("#acc").val(),pw:$("#pw").val()},
+                   {table:'member',acc:$("#acc").val(),pw:$("#pw").val()},
                    (res)=>{
-                       console.log(res);
                         if(parseInt(res)){
                             location.href="index.php";
                         }else{
@@ -50,5 +47,3 @@ function login(){
 
 
 </script>
-
-<!-- back的Bottom 也就是bot 去找第一筆資料 -->

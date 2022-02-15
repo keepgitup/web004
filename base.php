@@ -137,6 +137,8 @@ $Bot=new DB('bottom');
 $Ord=new DB('ord');
 $Type=new DB('type');
 $Type->save(['name'=>'keep']);
+$Goods=new DB('goods');
+
 /* $admin['acc']='admin';
 
 $admin['pw']='1234';

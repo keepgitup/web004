@@ -13,7 +13,6 @@
     <tr class="pp">
         <td><?=$row['name'];?></td>
         <td><?=$row['acc'];?></td>
-        <!-- 注意 這裡ymd 用/隔開 -->
         <td><?=date("Y/m/d",strtotime($row['regdate']));?></td>
         <td>  
             <button onclick="location.href='?do=edit_mem&id=<?=$row['id'];?>'">修改</button>
@@ -24,3 +23,4 @@
     }
     ?>
 </table>
+

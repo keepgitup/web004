@@ -45,11 +45,3 @@ function login(){
 
 
 </script>
-<!-- 最上面要記得 include_once "base.php" -->
-<!-- 20
-用session 存到資料庫去
--->
-<!-- session可以看到數字會跟著改 -->
-<!-- 從jquery上拿到得值 一定是 字串 -->
-
-<!-- 這裡用Ajax做確認比較快 -->

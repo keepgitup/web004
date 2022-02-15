@@ -30,6 +30,18 @@
             <button onclick="del('type')">刪除</button>
             <button>上架</button>
             <button>下架</button>
+
         </td>
     </tr>
 </table>
+
+<script>
+$("#parent").load("api/get_big.php")
+
+function newBig(){
+   // let big=$("#big").val();
+    $.post("api/new_big.php",{name:$("#big").val()},(res)=>{
+        location.reload();
+    })
+}
+</script>

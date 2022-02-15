@@ -32,7 +32,8 @@ function login(){
         console.log(chk);
         if(parseInt(chk)){
             $.post("api/chk_pw.php",
-                   {table:'member',acc:$("#acc").val(),pw:$("#pw").val()},
+                //    這裡table要用admin 因為admin才是管理
+                   {table:'admin',acc:$("#acc").val(),pw:$("#pw").val()},
                    (res)=>{
                        console.log(res);
                         if(parseInt(res)){

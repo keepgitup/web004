@@ -22,7 +22,11 @@ body
 	display:inline-block;
 	width:20%;
 	padding:2%;
-	min-height:550px;
+	/* 從min-height改成max-height */
+	/* 不用擔心太多新增超過視窗長度 */
+	height:550px;
+	/* 跟著一起改 */
+	overflow:auto;
 	vertical-align:top;
 	border:#000 1px solid;
 }

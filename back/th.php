@@ -17,7 +17,7 @@
     <tr class="tt">
         <td><?=$big['name'];?></td>
         <td class="ct">
-            <button onclick="edit(<?=$big['id'];?>)">修改</button>
+            <button onclick="edit(this,<?=$big['id'];?>)">修改</button>
             <button onclick="del('type',<?=$big['id'];?>)">刪除</button>
         </td>
     </tr>
@@ -29,7 +29,7 @@
     <tr class="pp ct">
         <td><?=$mid['name'];?></td>
         <td>
-            <button onclick="edit(<?=$mid['id'];?>)">修改</button>
+            <button onclick="edit(this,<?=$mid['id'];?>)">修改</button>
             <button onclick="del('type',<?=$mid['id'];?>)">刪除</button>
         </td>
     </tr>
@@ -81,6 +81,19 @@ function newType(type){
     $.post("api/save_type.php",{name,parent},(res)=>{
         location.reload();
     })
+}
+
+function edit(dom,id){
+    let text=$(dom).parent().prev().text();
+    let name=prompt("請輸入要修改的分類文字",text);
+    if(name!=null){
+        $.post("api/save_type.php",{id,name},(res)=>{
+            location.reload();
+            //$(dom).parent().prev().text(name)
+            //$(`#parent option[value='${id}']`).text(name)
+        })
+    }
+
 }
 
 /* function newBig(){

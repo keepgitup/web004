@@ -32,7 +32,7 @@ function login(){
         console.log(chk);
         if(parseInt(chk)){
             $.post("api/chk_pw.php",
-                //    這裡table要用admin 因為admin才是管理
+                //    這裡table要用admin 因為admin才是
                    {table:'admin',acc:$("#acc").val(),pw:$("#pw").val()},
                    (res)=>{
                        console.log(res);

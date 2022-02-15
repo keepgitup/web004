@@ -68,7 +68,7 @@ class DB{
             $sql .= " VALUES('".join("','",$array)."')";
 
         }
-        echo $sql;
+        // echo $sql;
         return $this->pdo->exec($sql);
 
     }

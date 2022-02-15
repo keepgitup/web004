@@ -29,10 +29,12 @@
 <script>
 function login(){
     $.post("api/chk_ans.php",{ans:$("#ans").val()},(chk)=>{
+        console.log(chk);
         if(parseInt(chk)){
             $.post("api/chk_pw.php",
                    {table:'member',acc:$("#acc").val(),pw:$("#pw").val()},
                    (res)=>{
+                       console.log(res);
                         if(parseInt(res)){
                             location.href="index.php";
                         }else{

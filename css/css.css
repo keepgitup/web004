@@ -65,7 +65,8 @@ body
 }
 .all td
 {
-	min-width:100px;
+/* 減少畫面突出框框 */
+	min-width:50px;
 	padding:10px;
 }
 .tt

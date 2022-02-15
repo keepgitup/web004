@@ -32,7 +32,7 @@
     <button onclick="reg()">註冊</button>
     <button onclick="reset()">重置</button>
 </div>
-<!-- 這裡就是把它包成json格式 -->
+
 <script>
 function chkAcc(){
     let acc=$("#acc").val()
@@ -67,5 +67,4 @@ function reg(){
 }
 
 
-// 帳號已存在 或 admin.acc剛好等於admin
 </script>

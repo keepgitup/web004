@@ -30,7 +30,6 @@
             <button onclick="del('type')">刪除</button>
             <button>上架</button>
             <button>下架</button>
-
         </td>
     </tr>
 </table>

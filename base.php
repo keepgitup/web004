@@ -134,6 +134,7 @@ $Mem=new DB("member");
 // 而unserialize是 還原
 $Admin=new DB('admin');
 $Bot=new DB('bottom');
+$Ord=new DB('ord');
 
 /* $admin['acc']='admin';
 $admin['pw']='1234';

@@ -9,7 +9,6 @@ if(!isset($_POST['id'])){
     $_POST['no']=rand(100000,999999);
 }
 
-
 $Goods->save($_POST);
 
 to("../back.php?do=th");

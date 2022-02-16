@@ -6,4 +6,11 @@ if($_POST['ans']==$_SESSION['ans']){
 }else{
     echo 0;
 }
+
+
+
+
+
+
+
 //echo $_POST['ans']==$_SESSION['ans'];

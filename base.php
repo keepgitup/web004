@@ -112,7 +112,7 @@ class DB{
             break;
         
         }
-        // echo $sql;
+        //echo $sql;
         return $this->pdo->query($sql)->fetchColumn();
     }
 
@@ -129,18 +129,13 @@ function dd($array){
 }
 
 $Mem=new DB("member");
-
-// base serialize 12345分別存到資料庫裡 
-// 而unserialize是 還原
 $Admin=new DB('admin');
 $Bot=new DB('bottom');
 $Ord=new DB('ord');
 $Type=new DB('type');
-$Type->save(['name'=>'keep']);
 $Goods=new DB('goods');
 
 /* $admin['acc']='admin';
-
 $admin['pw']='1234';
 $admin['pr']=serialize([1,2,3,4,5]);
 $Admin->save($admin); */

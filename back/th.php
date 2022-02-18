@@ -51,6 +51,7 @@
         <td>狀態</td>
         <td>操作</td>
     </tr>
+    <!-- 導向回圈撈 -->
     <?php 
     $goods=$Goods->all();
     foreach($goods as $g){

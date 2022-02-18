@@ -1,1 +1,0 @@
-<div class=""><img src="" alt=""></div>

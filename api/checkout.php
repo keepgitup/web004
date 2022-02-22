@@ -1,11 +1,17 @@
-<?php
+<?php 
 include_once "../base.php";
 
+$_POST['no']=date("Ymd") . rand(100000,999999);
+// // 檢查是否有訂單重複
+/* while(!empty($Ord->find(['no'=>$_POST['no']]))){
+    $_POST['no']=date("Ymd") . rand(100000,999999);
+};
+ */
 
+$_POST['goods']=serialize($_SESSION['cart']);
 
-// 檢查
-// $Ord->find(['no']=>$_POST['no']]){
-// 
-// }
-
+$Ord->save($_POST);
 ?>
+
+
+

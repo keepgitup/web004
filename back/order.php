@@ -13,13 +13,13 @@
     foreach($rows as $row){
     ?>
     <tr class="pp">
-        <td><?=$row['no'];?></td>
+        <td><a href='?do=detail&id=<?=$row['id'];?>'><?=$row['no'];?></a></td>
         <td><?=$row['total'];?></td>
         <td><?=$row['acc'];?></td>
         <td><?=$row['name'];?></td>
         <td><?=date("Y/m/d",strtotime($row['orddate']));?></td>
         <td>  
-            <button onclick="del('member',<?=$row['id'];?>)">刪除</button>
+            <button onclick="del('ord',<?=$row['id'];?>)">刪除</button>
         </td>
     </tr>
     <?php

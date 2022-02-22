@@ -34,7 +34,7 @@ if(empty($_SESSION['cart'])){
         <td>刪除</td>
     </tr>
     <?php 
-    foreach($_SESSION['cart'] as $id => $qt){
+    foreach($_SESSION['cart'] as  $id=> $qt){
         $item=$Goods->find($id);
     ?>
     <tr class="pp ct">
@@ -45,7 +45,7 @@ if(empty($_SESSION['cart'])){
         <td><?=$item['price'];?></td>
         <td><?=$item['price']*$qt;?></td>
         <td>
-            <img src="icon/0415.jpg" >
+            <img src="icon/0415.jpg" onclick="delCart(<?=$id;?>)">
         </td>
     </tr>
     <?php 
@@ -57,5 +57,13 @@ if(empty($_SESSION['cart'])){
     <img src="icon/0412.jpg" onclick="location.href='?do=checkout'">
 </div>
 <?php
+}
+?>
 
-
+<script>
+function delCart(id){
+    $.post("api/del_cart.php",{id},()=>{
+        location.href='?do=buycart';
+    })
+}
+</script>

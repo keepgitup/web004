@@ -57,7 +57,7 @@ if(empty($_SESSION['cart'])){
     <img src="icon/0412.jpg" onclick="location.href='?do=checkout'">
 </div>
 <?php
-}
+// }
 ?>
 
 <script>

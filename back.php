@@ -1,4 +1,4 @@
-<?php include_once "base.php"
+<?php include_once "base.php";
 
 if(!isset($_SESSION['admin'])){
     to("index.php");
@@ -7,7 +7,6 @@ if(!isset($_SESSION['admin'])){
 
 $user=$Admin->find(['acc'=>$_SESSION['admin']]);
 $right=unserialize($user['pr']);
-
 ?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
